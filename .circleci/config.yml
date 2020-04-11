@@ -20,7 +20,7 @@ jobs:
       - save_cache:
           paths:
             - ./vendor/bundle
-            key: v1-dependencies-{{ checksum "Gemfile.lock" }}
+	  key: v1-dependencies-{{ checksum "Gemfile.lock" }}
 
     build_image:
       docker:
