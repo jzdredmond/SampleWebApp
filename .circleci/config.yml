@@ -25,7 +25,7 @@ jobs:
   build_image:
     docker:
       - image: docker:18.09.0
-      steps:
+    steps:
       - checkout
       - setup_remote_docker
       - run:
