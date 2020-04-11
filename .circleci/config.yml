@@ -6,7 +6,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: # circleci の ruby のコンテナの bundler のバージョンは古いので update する
+      - run: # circleci の ruby のコンテナの bundler のバージョンは古いのでupdate する
           name: bundle update
           command: gem install bundler:2.0.2
       - restore_cache:
